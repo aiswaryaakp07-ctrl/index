@@ -377,3 +377,34 @@ h1 {
     align-items: flex-start;
   }
 }
+.about-grid {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-photo img {
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 5px solid #ffffff;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.about-content p {
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .about-photo img {
+        margin: 0 auto 30px;
+    }
+}
